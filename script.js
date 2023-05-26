@@ -38,12 +38,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
- function displayText(text) {
+function displayText(text) {
+  const outputContainer = document.getElementById("terminal-output");
   const message = document.createElement("pre");
-  message.style.whiteSpace = "pre-wrap";
   message.textContent = text;
-  outputDiv.appendChild(message);
+  outputContainer.appendChild(message);
+  outputContainer.scrollTop = outputContainer.scrollHeight;
 }
+
 
 
   function displayWhoAmI() {

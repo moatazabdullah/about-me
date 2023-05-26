@@ -29,9 +29,11 @@ body, html {
   scrollbar-color: #0F0 #222;
 }
 
-#terminal-output {
-  margin-bottom: 10px;
+.terminal-output {
+  overflow: auto;
+  white-space: pre-wrap;
 }
+
 
 .terminal-input {
   display: flex;
