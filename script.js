@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function displayErrorMessage(command) {
     const message = `Command not found: ${command}`;
-    displayTextWithTypingEffect(message);
+    displayTextWithTypingEffect(message,15);
   }
 
   function displayTextWithTypingEffect(text, s) {
