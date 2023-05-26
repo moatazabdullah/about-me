@@ -56,8 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
     message.innerHTML =
       "<strong>You can find me on:</strong><br><br>" +
       "- <a href='https://moatazabdullah.github.com/about-me'>Website</a><br>" +
-      "- <a href='https://linkedin.com/moataz-abdullah'>LinkedIn</a><br>" +
+      "- <a href='https://www.linkedin.com/in/moataz-abdullah'>LinkedIn</a><br>" +
       "- <a href='https://github.com/moatazabdullah'>GitHub</a><br>" +
+      "- <a href='https://twitter.com/0x783'>Twitter</a><br>" +
       "- Email: abdullahmoataz90@gmail.com";
     outputDiv.appendChild(message);
   }
@@ -103,3 +104,4 @@ document.addEventListener("DOMContentLoaded", function () {
   displayWelcomeMessage();
   commandInput.focus();
 });
+
