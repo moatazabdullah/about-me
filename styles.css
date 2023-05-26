@@ -1,0 +1,133 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.terminal {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #0F0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+}
+
+.terminal-header {
+  padding: 10px;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 2px solid #0F0;
+  border-bottom: 2px solid #0F0;
+}
+
+.terminal-body {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #0F0 #000;
+  background-color: #000;
+}
+
+#terminal-output {
+  margin-bottom: 10px;
+}
+
+.terminal-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.terminal-prompt {
+  color: #0F0;
+  margin-right: 5px;
+}
+
+#command-line {
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+}
+
+#cursor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #0F0;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+#command-input {
+  background-color: transparent;
+  border: none;
+  color: #0F0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+}
+
+/* Scrollbar Styles (optional) */
+.terminal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+  background-color: #0F0;
+}
+
+/* Mr. Robot Style */
+body {
+  background-color: #222;
+}
+
+.terminal {
+  border: 1px solid #0F0;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+}
+
+.terminal-header {
+  background-color: #111;
+  border-bottom: none;
+}
+
+.terminal-prompt {
+  color: #0F0;
+}
+
+#cursor {
+  background-color: #0F0;
+}
+
+.terminal-body {
+  background-color: #000;
+}
+
+#terminal-output p {
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+#terminal-output a {
+  color: #0F0;
+  text-decoration: none;
+}
+
+#terminal-output a:hover {
+  text-decoration: underline;
+}
