@@ -49,7 +49,7 @@ function displayText(text) {
 
 
   function displayWhoAmI() {
-    const message = "I'm Moataz, a Networking and Telecommunication Engineer and a cybersecurity enthusiast driven by a deep passion for the field.\n Constantly seeking to develop my skills and knowledge, I am dedicated to staying updated with the latest trends and advancements in cybersecurity. My expertise lies in penetration testing, where I specialize in conducting thorough assessments of systems and networks to identify vulnerabilities. Additionally, I have proficiency in web application pentesting, ensuring the security of online platforms. Programming languages such as C++ and Python are my tools of choice, allowing me to develop effective and efficient solutions. With a relentless drive for improvement, I am committed to making a positive impact in the realm of cybersecurity.";
+    const message = "I'm Moataz, a Networking and Telecommunication Engineer and a cybersecurity enthusiast driven by a deep passion for the field.\n"+"Constantly seeking to develop my skills and knowledge, I am dedicated to staying updated with the latest trends and advancements in cybersecurity."+ "My expertise lies in penetration testing, where I specialize in conducting thorough assessments of systems and networks to identify vulnerabilities." + "Additionally, I have proficiency in web application pentesting, ensuring the security of online platforms." + " Programming languages such as C++ and Python are my tools of choice, allowing me to develop effective and efficient solutions." + " With a relentless drive for improvement, I am committed to making a positive impact in the realm of cybersecurity.";
     displayTextWithTypingEffect(message);
   }
 
