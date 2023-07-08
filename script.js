@@ -11,8 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const helpMessage =
       "Available commands:\n" +
       "- whoami : Display information about me\n" +
-      "- findme : Find me on social media\n" +
-      "- Clear OR CTRL + L: Clears the screen";
+      "- contact : Find me on social media\n" +
+      "- Clear OR CTRL + L: Clears the screen\n"+
+      "- ls : list directory contents\n"+
+      "- cat : concatenate files"+
+      "- id : print real and effective user and group IDs";
     displayTextWithTypingEffect(helpMessage, 15);
   }
 
@@ -26,11 +29,22 @@ document.addEventListener("DOMContentLoaded", function () {
       case "clear":
         clearScreen();
         break;
+
       case "whoami":
+      case "cat readme.txt":
+      case "cat Readme.txt":
         displayWhoAmI();
         break;
-      case "findme":
+      case "contact":
+      case "cat contact.txt":
+      case "cat Contact.txt":
         displayFindMe();
+        break;
+      case 'ls':
+        ls();
+        break;
+      case 'id':
+        id();
         break;
       default:
         displayErrorMessage(command);
@@ -51,6 +65,15 @@ document.addEventListener("DOMContentLoaded", function () {
     displayTextWithTypingEffect(message, 10);
   }
 
+  function ls(){
+    const message = "Readme.txt\tcontact.txt";
+    displayTextWithTypingEffect(message, 15);
+  }
+
+ function id(){
+    const message = "uid=0(root) gid=0(root) groups=0(root)";
+    displayTextWithTypingEffect(message, 15);
+  }
   function displayFindMe() {
     const message = document.createElement("p");
     message.innerHTML =
@@ -59,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "- <a href='https://www.linkedin.com/in/moataz-abdullah'>LinkedIn</a><br>" +
       "- <a href='https://github.com/moatazabdullah'>GitHub</a><br>" +
       "- <a href='https://twitter.com/0x783'>Twitter</a><br>" +
-      "- Email: abdullahmoataz90@gmail.com";
+      "- <a href='mailto:abdullahmoataz90@gmail.com'>Email</a>";
     outputDiv.appendChild(message);
   }
 
