@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "- contact : Find me on social media\n" +
       "- Clear OR CTRL + L: Clears the screen\n"+
       "- ls : list directory contents\n"+
-      "- cat : concatenate files"+
+      "- cat : concatenate files\n"+
       "- id : print real and effective user and group IDs";
     displayTextWithTypingEffect(helpMessage, 15);
   }
