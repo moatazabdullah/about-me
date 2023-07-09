@@ -11,11 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const helpMessage =
       "Available commands:\n" +
       "- whoami : Display information about me\n" +
-      "- contact : Find me on social media\n" +
-      "- Clear OR CTRL + L: Clears the screen\n"+
-      "- ls : list directory contents\n"+
-      "- cat : concatenate files\n"+
-      "- id : print real and effective user and group IDs";
+      "- contact : Find me on social media\n";
     displayTextWithTypingEffect(helpMessage, 15);
   }
 
